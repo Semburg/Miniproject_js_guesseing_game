@@ -1,4 +1,24 @@
+body, #wrapper{
+    margin: 0;
+    padding: 0;
+}
 
+#wrapper{
+    background-color: #000;
+    color: #fff;;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper_game{
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: rgba(33, 33, 116, 0.25) 0px 50px 100px -20px, rgba(160, 158, 158, 0.3) 0px 30px 60px -30px, rgba(128, 134, 139, 0.35) 0px -2px 6px 0px inset;
+}
 
 #game_in{
     display: none;
@@ -8,6 +28,7 @@
     padding: 5px;
     display: none;
     color: rgb(46, 194, 53);
+    border-radius: 5px;
 }
 
 #new_game:hover{
@@ -15,5 +36,36 @@
 
     color: greenyellow;
     transition: all 2s;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(94, 92, 92, 0.1) 0px 4px 12px;
+
+    box-shadow: rgba(224, 221, 221, 0.25) 0px 14px 28px, rgba(247, 243, 243, 0.22) 0px 10px 10px;
+}
+
+input[type=number]{
+    width: 40px;
+}
+
+#btn{
+    padding: 5px 25px;
+    color: white;
+    background-color: rgb(20, 19, 19);
+    border-radius: 5px;
+    border:none;
+    outline: none;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 0.0625em 0.0625em, rgba(255, 255, 255, 0.25) 0px 0.125em 0.5em, rgba(0, 0, 0, 0.1) 0px 0px 0px 1px inset;
+    transition: all 1s;
+}
+
+#btn:hover{
+    color: silver;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 20px 30px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+#btn:active{
+    color: white;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 0.0625em 0.0625em, rgba(255, 255, 255, 0.25) 0px 0.125em 0.5em, rgba(0, 0, 0, 0.1) 0px 0px 0px 1px inset;
+    transition: all .2s;
+    t
 }
