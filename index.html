@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Guessing Game (1-100)</title>
+</head>
+
+<body>
+    <section id="wrapper">
+        <section id="wrapper_game">
+
+            <form id="form_try_count">
+                <h3>Choose the c0unt</h3>
+                <input type="radio" name="try_count" id="four" checked onchange="setFour()">
+                <label for="try_count">4</label>
+                <input type="radio" name="try_count" id="five" onchange="setFive()">
+                <label for="try_count">5</label>
+                <br>
+
+                <input type="radio" name="try_count" id="six" onchange="setSix()">
+                <label for="try_count">6</label>
+
+                <input type="radio" name="try_count" id="custom_num_check" onchange="showInputField()">
+                <label for="try_count">custom</label>
+                <br>
+
+                <div id="custom_num_form" style="display: none;">
+                    <p>Set your rounds count</p>
+                    <input type="number" id="set_try_counter" onchange="setCustom()">
+                    <p id="errorMsg1" style="color: red;"></p>
+                </div>
+            </form>
+
+            <section id="game_in">
+                <h3>Your tries:</h3>
+                <p> <span id="counter_tries">1</span> / <span id="tries_total">10</span> </p>
+
+            </section>
+            <br><br>
+            <form id="form_guess_numbers">
+                <input type="number" name="" id="guess_number">
+                <br>
+                <br>
+                <input type="button" id="btn" value="GUESS!" onclick="showResult()">
+                
+            </form>
+            <div id="flow_results"><br></div> 
+            <p id="new_game" onclick="window.location.reload()">Play again!</p>  <br>
+        </section>
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
